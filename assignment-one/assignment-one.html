@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sprite spin</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+		<h2>Move the car using your mouse!!</h2>
+
+		<div id="myCar">
+		</div>
+
+
+        <h3>Plugin 3dEye.js is supportable in all major browsers, Android and iOS.</h3>
+
+
+
+	<script type="text/javascript" src='js/jquery.min.js'></script>
+	<script type="text/javascript" src='js/3deye.min.js'></script>
+	<script type="text/javascript">
+	   $(document).ready(function(){
+	
+		$("#myCar").vc3dEye({
+			imagePath:"images/",
+				totalImages:11,
+				imageExtension:"png"
+			});
+			
+		});
+
+    </script>
+</body>
+</html>
